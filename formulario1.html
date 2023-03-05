@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <title>Formulário de Contato</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="formulario1.js"></script>
+    <link rel="stylesheet" href="formulario1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    
+</head>
+
+<body>
+    <div class="container mx-auto bg-light mt-1 w-100">
+        <header class="row">
+            <!-- oculte a barra de acessibilidade -->
+            <div class="d-none">
+                <div id="barra_acessibilidade" class="col-12"></div>
+                <ul id="atalhos">
+                    <li><a href="#menu" accesskey="1">Ir para menu [1]</a></li>
+                    <li><a href="#formulario" accesskey="2">Ir para formulário [2]</a></li>
+                </ul>   
+            </div>
+
+            <!-- faça com que as duas divs a seguir sejam exibidas lado a lado quando o viewport for maior ou igual a 576px sendo que a primeira deve ocupar 3/12 e a segunda 9/12 consulte: https://getbootstrap.com.br/docs/4.1/layout/grid/ -->
+            <div class="row">
+                <div class="col-sm-3">   
+                    <img src="logo.jpeg" alt="Logotipo da empresa com as letras XPTO." height="70">
+                </div>
+
+                <div class="col-sm-9 text-center">
+                    <h1 class="company-name">Empresa XPTO</h1>
+                </div>
+
+            </div>
+        </header>
+
+        <section class="row">
+            <div class="col-12"></div>
+                <!-- oculte o header abaixo 
+                consulte https://getbootstrap.com.br/docs/4.1/utilities/display/ -->
+                <div class="d-none">
+                    <h2 id="menu">Menu</h2>
+                </div>
+
+                <div class="col-12">
+                    <!-- torne o menu responsivo, conforme o exemplo
+                    consulte https://getbootstrap.com.br/docs/4.1/components/navbar/ -->
+                    <nav>
+                        <div class="pos-f-t"></div>
+                        <div class="collapse" id="navbarToggleExternalContent">
+                            <div class="bg-dark p-4">
+                                <ul> 
+                                    <li>
+                                        <div class="text-white h4"></div>
+                                        <a href="#">Home</a> 
+                                    </li>
+                                    <li>
+                                        <div class="text-white h4"></div>
+                                        <a href="#">Contato</a>
+                                    </li>
+                                    </ul>
+    </div>
+  </div>
+</nav>
+  <nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+</div>
+          
+
+        <article class="col-12">  
+       <h2 id="formulario">Formulário de Contato</h2>
+<!-- torne o formulário responsivo, conforme o exemplo consulte https://getbootstrap.com.br/docs/4.1/components/forms/ -->  
+
+<form id=myForm>
+    <label for="nome">Nome *</label>
+    <input type="text" id="nome" name="nome" required placeholder="Digite seu Nome">
+    <span class="error-text error">Campo nome obrigatório.</span>
+
+    <label for="email">E-mail *</label>
+    <input type="email" id="email" name="email" required placeholder="Digite seu E-mail">
+    <span class="error-text error">Campo E-mail obrigatório.</span>
+
+    <label for="mensagem">Mensagem *</label>
+    <textarea id="mensagem" name="mensagem" required></textarea>
+    <span class="error-text error">Campo Mensagem obrigatório.</span>
+</form>
+
+
+ <button type="submit" class="btn btn-primary my-1">Enviar</button> 
+
+
+        </article>
+      </section>
+
+      <footer class="row">
+        <div class="col-12">
+          <p>Copyright © 2021</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <noscript>Atualize seu navegador</noscript>
+
+  </body>
+
+</html>

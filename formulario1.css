@@ -1,0 +1,45 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: flex;
+  flex-direction: center;
+  margin-bottom: 0.5rem;
+}
+
+
+span {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #0600B0;
+}
+
+input {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #0600B0;
+  margin-bottom: 1rem;
+}
+
+
+.error-text {
+  display: none;
+  color: red;
+  font-size: 0.8rem;
+}
+
+.error {
+  display: block;
+}
+
+.valid {
+  border: 2px solid green;
+}
+
+.invalid {
+  border: 2px solid red;
+}
+
+
